@@ -12,7 +12,7 @@ data.odeMethod = 'rk4';
 data.NLPMethod = 'MultipleShooting';
 
 data.gravity = [0; 0; -9.81];
-% data.gravity = [0; 0; -9.806]; % According to WolframAlpha
+% data.gravity = [0; 0; -9.80639]; % According to WolframAlpha
 data.gravityRotationBound = pi/16;
 data.nCardinalCoor = 3;
 
@@ -25,10 +25,6 @@ writecell(header, output_filename)
 % data.trial_number = 2;
 
 % angles_measured = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-% angles_measured = [0, 1, 2];
-% angles_measured = [3, 4, 5];
-% angles_measured = [6, 7, 8];
-% angles_measured = [9, 10];
 angles_measured = 10;
 trial_types = {'Drop', 'Para'};
 trial_numbers = [1, 2, 3, 4];
